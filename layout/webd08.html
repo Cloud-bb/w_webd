@@ -6,108 +6,105 @@
     <title>웹디자인기능사 레이아웃b-4</title>
     <style>
         *{
-            margin: 0;
+            margin:0;
             padding: 0;
         }
         #wrap{
-            width: 100%;
+            width:100%;
         }
         #header{
-            width:100%;
+            width: 100%;
             background-color: #efefef;
         }
-        #header .header_wrapper{
-            display: flex;
-            width: 1200px;
-            margin: 0 auto;
-        }
-        #header .header_wrapper .logo{
+        #header .logo{
             width: 20%;
             height: 100px;
-            background-color: #b4b4b4;
+            background-color: #c7c7c7;
         }
-        #header .header_wrapper .nav{
+        #header .nav{
             width: 80%;
             height: 100px;
-            background-color: #c4c4c4;
+            background-color: #bcbcbc;
         }
+
         #slider{
-            width: 1200px;
+            width: 100%;
             height: 300px;
-            margin:0 auto;
-            background-color: #e3e3e3;
         }
-        #cotents{
-            width: 1200px;
-            margin:0 auto;
-            display: flex;
+        #contents{
+            width: 100%;
         }
-        #cotents .content1{
+        #contents .content1{
             width: 33.33%;
             height: 200px;
             background-color: #bcbcbc;
         }
-        #cotents .content2{
+        #contents .content2{
             width: 33.33%;
             height: 200px;
             background-color: #b1b1b1;
         }
-        #cotents .content3{
+        #contents .content3{
             width: 33.33%;
             height: 200px;
             background-color: #a3a3a3;
         }
         #footer{
             width: 100%;
-            background-color: #a2a2a2;
-        }
-        #footer .footer_container{
-            width: 1200px;
-            margin: 0 auto;
-            display: flex;
-        }
-        #footer .footer_container .footer1{
-            width: 80%;
             height: 100px;
-            background-color: #9d9d9d;
+            background-color: #d1d1d1;
         }
-        #footer .footer_container .footer1 .footer1-1{
+        #footer .footer1{
+            width: 80%;
+        }
+        #footer .footer1 .footer1-1{
             width: 100%;
             height: 50px;
             background-color: #9d9d9d;
         }
-        #footer .footer_container .footer1 .footer1-2{
+        #footer .footer1 .footer1-2{
             width: 100%;
             height: 50px;
-            background-color: #8d8d8d;
+            background-color: #9e9e9e;
         }
-        #footer .footer_container .footer2{
+        #footer .footer2{
             width: 20%;
             height: 100px;
-            background-color: #929292;
+            background-color: #838383;
         }
-      
+        .container{
+            width: 1200px;
+            height: inherit;
+            margin:0 auto;
+            background-color: rgba(0,0,0,0.2);
+            display: flex;
+        }
+
     </style>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="header_wrapper">
-                <div class="logo"></div>
+            <div class="container">
+                <h1 class="logo"></h1>
                 <nav class="nav"></nav>
             </div>
         </header>
         <!-- //header -->
-        <article id="slider"></article>
+        <article id="slider">
+            <div class="container"></div>
+        </article>
         <!-- //slider -->
-        <main id="cotents">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3"></div>
+        <main id="contents">
+            <div class="container">
+                <section class="content1"></section>
+                <section class="content2"></section>
+                <section class="content3"></section>
+            </div>
         </main>
-        <!-- //main -->
+        <!-- //contents -->
         <footer id="footer">
-            <div class="footer_container">
+            <div class="container">
                 <div class="footer1">
                     <div class="footer1-1"></div>
                     <div class="footer1-2"></div>
@@ -115,6 +112,7 @@
                 <div class="footer2"></div>
             </div>
         </footer>
+        <!-- //footer -->
     </div>
 </body>
 </html>
